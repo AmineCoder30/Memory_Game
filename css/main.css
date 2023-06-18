@@ -94,8 +94,12 @@ input[type="text"] {
     
   
 }
+.red-text{
+    border: 2px solid #1da1f2;
+ }
 .red-text::-webkit-input-placeholder {
-    color: red;
+    color: rgb(41 121 255 );
+    font-size: 18px;
  }
 input[type="submit"] {
     color: rgb(41 121 255 );
@@ -188,8 +192,43 @@ img{
     border-radius: 5px;
 }
 
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+.container{
+    width: 500px;
+} 
+.card{
+    height: 70px;
+}
+.info{
+    font-size: 24px;
+}
+.back{
+    font-size: 70px;
+}
+.inner_form {
+    width: 500px;
+}
+.level,input[type="text"]{
+    width: 300px;
+}
+.level button,input[type="submit"],input[type="text"]{
+    font-size: 22px;
+}
+input[type="text"]{padding: 20px 10px;}
+#inner_rsl{width: 500px;}
+div#rlt{font-size: 32px;}
+div#ls_wn {font-size: 26px;}
+button#new_game{font-size: 28px;}
 
-/*
+}
+@media (max-width: 575px) {
+.back{
+    font-size: 40px;
+}
+div#rlt{font-size: 18px;}
+div#ls_wn {font-size: 11px;}
+}
 /* start to style the box of items */
 .info {
     padding: 5px 10px;
@@ -201,7 +240,6 @@ img{
     background-image: linear-gradient(45deg, rgb(2, 44, 180), #0fccce);
     margin-bottom: 10px;
     border-radius: 5px;
-    font-size: 13px;
 }
 .name,.score {
     text-transform: capitalize;
@@ -229,7 +267,7 @@ div#result {
     text-align: center;
     background: white;
     box-shadow: 0 0 6px rgba(128, 128, 128, 0.76);
-    padding: 10px 20px;
+    padding: 35px 20px;
     border-radius: 5px;
     background-image: linear-gradient(45deg, #1da1f2, rgb(3 32 81));
 }
@@ -240,7 +278,6 @@ div#rlt {
     text-transform: uppercase;
     padding: 3px;
     color: #fff;
-    font-size: 18px;
     font-weight: bold;
 }
 div#nm {
@@ -250,7 +287,6 @@ div#nm {
 div#ls_wn {
     color: #fff;
     text-transform: capitalize;
-    font-size: 11px;
     padding: 4px 0px;
     margin-top: -5px;
     border-radius: 22px;
