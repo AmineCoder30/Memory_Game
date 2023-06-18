@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Memory Game</title>
+</head>
+<body>
+    <div class="body_game">
+    <div class="area" >
+                <ul class="circles">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                </ul>
+        </div >
+        <div class="container">
+            <div id="result" class="hide">
+                <div id="inner_rsl">
+                    <div id="rlt">"congratulation!"</div>
+                    <div id="ls_wn">you win</div>
+                    <button id="new_game">new game</button>
+                </div>
+               
+
+            </div>
+            <div class="form" id="form">
+                <div class="inner_form" >
+                    <div class="level">
+                        <button id="easy" class="selected">easy</button>
+                        <button id="hard">hard</button>
+                    </div>
+                    <input type="text" name="username" id="input_name" placeholder="your name" required>
+                    <input type="submit" value="start" id="start">
+                </div>
+            </div>
+           
+            <div class="box">
+                <div class="info">
+                    <div class="name" id="name">amine</div>
+                    <div class="score" >
+                        tries:
+                        <span id="score">0</span>
+                    </div>
+                </div>
+                <div class="all_items" id="items">
+                  
+                </div>
+            </div>
+        </div>
+        <audio src="./media/mixkit-one-clap-481.wav" id="flip"></audio>
+        <audio src="./media/mixkit-losing-bleeps-2026.wav" id="fail"></audio>
+        <audio src="./media/success-1-6297.mp3" id="success"></audio>
+        <audio src="./media/mixkit-game-level-completed-2059.wav" id="win"></audio>
+        <audio src="./media/mixkit-game-over-trombone-1940.wav" id="lose"></audio>
+       
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>
